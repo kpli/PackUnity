@@ -8,6 +8,8 @@
 
 [Uu]ser[Ss]ettings/
 
+HybridCLRData/
+
 *.csproj
 *.unityproj
 *.sln
