@@ -28,6 +28,7 @@ HybridCLRData/
 .idea/
 .vs/
 .vscode/
+.trae/
 *.swp
 *.swo
 *~
