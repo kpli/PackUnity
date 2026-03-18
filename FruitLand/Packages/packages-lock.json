@@ -17,6 +17,13 @@
       },
       "hash": "a7c715fb1f2b7741b46f5ee48c70aa3bb1189bd2"
     },
+    "com.cysharp.unitask": {
+      "version": "2.4.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.tuyoogame.yooasset": {
       "version": "2.3.18",
       "depth": 0,
