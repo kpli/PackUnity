@@ -1,6 +1,6 @@
 {
-    "name": "AOT",
-    "rootNamespace": "AOT",
+    "name": "Core",
+    "rootNamespace": "Core",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

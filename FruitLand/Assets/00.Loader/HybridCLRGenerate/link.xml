@@ -2,18 +2,24 @@
 <linker>
   <assembly fullname="AOT">
     <type fullname="AOT.IGameEntry" preserve="all" />
+    <type fullname="AOT.IAssetManager" preserve="all" />
     <type fullname="AOT.HybridCLRLoader" preserve="all" />
     <type fullname="AOT.GameLauncher" preserve="all" />
+    <type fullname="AOT.YooAssetManager" preserve="all" />
   </assembly>
   <assembly fullname="System">
     <type fullname="System.Reflection.Assembly" preserve="all" />
     <type fullname="System.Activator" preserve="all" />
+    <type fullname="System.Action" preserve="all" />
+    <type fullname="System.Action`1" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule">
     <type fullname="UnityEngine.Debug" preserve="all" />
     <type fullname="UnityEngine.MonoBehaviour" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.Time" preserve="all" />
+    <type fullname="UnityEngine.SerializeField" preserve="all" />
+    <type fullname="UnityEngine.HeaderAttribute" preserve="all" />
   </assembly>
   <assembly fullname="mscorlib">
     <type fullname="System.Array" preserve="all" />
