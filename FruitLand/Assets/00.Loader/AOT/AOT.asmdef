@@ -2,7 +2,8 @@
     "name": "AOT",
     "rootNamespace": "AOT",
     "references": [
-        "GUID:core-guid-reference"
+        "GUID:a47c8690d082e41e18d8c5f32a4efb0e",
+        "GUID:e34a5702dd353724aa315fb8011f08c3"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

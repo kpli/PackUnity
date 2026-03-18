@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using UnityEngine;
 using YooAsset;
 
@@ -29,10 +28,10 @@ namespace AOT
             _package = YooAssets.CreatePackage(packageName);
             YooAssets.SetDefaultPackage(_package);
 
-            var operation = _package.InitializePackage(new EditorSimulateModeParameters());
-            operation.OnComplete += () =>
+            var operation = _package.InitializeAsync(new EditorSimulateModeParameters());
+            operation.Completed += (op) =>
             {
-                if (operation.Status == EOperationStatus.Succeed)
+                if (op.Status == EOperationStatus.Succeed)
                 {
                     _isInitialized = true;
                     Debug.Log($"[YooAssetManager] Package '{packageName}' initialized successfully");
@@ -40,8 +39,8 @@ namespace AOT
                 }
                 else
                 {
-                    Debug.LogError($"[YooAssetManager] Failed to initialize package: {operation.Error}");
-                    onFailed?.Invoke(operation.Error);
+                    Debug.LogError($"[YooAssetManager] Failed to initialize package: {op.Error}");
+                    onFailed?.Invoke(op.Error);
                 }
             };
         }
@@ -54,33 +53,33 @@ namespace AOT
                 return;
             }
 
-            var operation = _package.UpdatePackageVersionAsync();
-            operation.OnComplete += () =>
+            var operation = _package.RequestPackageVersionAsync();
+            operation.Completed += (op) =>
             {
-                if (operation.Status != EOperationStatus.Succeed)
+                if (op.Status != EOperationStatus.Succeed)
                 {
-                    onFailed?.Invoke($"Update version failed: {operation.Error}");
+                    onFailed?.Invoke($"Request version failed: {op.Error}");
                     return;
                 }
 
-                var updateOperation = _package.UpdatePackageManifestAsync(operation.PackageVersion);
-                updateOperation.OnProgress += progress => onProgress?.Invoke(progress);
-                updateOperation.OnComplete += () =>
+                var versionOp = op as RequestPackageVersionOperation;
+                var updateOperation = _package.UpdatePackageManifestAsync(versionOp.PackageVersion);
+                updateOperation.Completed += (updateOp) =>
                 {
-                    if (updateOperation.Status == EOperationStatus.Succeed)
+                    if (updateOp.Status == EOperationStatus.Succeed)
                     {
-                        Debug.Log($"[YooAssetManager] Package updated to version {operation.PackageVersion}");
+                        Debug.Log($"[YooAssetManager] Package updated to version {versionOp.PackageVersion}");
                         onSuccess?.Invoke();
                     }
                     else
                     {
-                        onFailed?.Invoke($"Update manifest failed: {updateOperation.Error}");
+                        onFailed?.Invoke($"Update manifest failed: {updateOp.Error}");
                     }
                 };
             };
         }
 
-        public T LoadAssetSync<T>(string assetPath) where T : Object
+        public T LoadAssetSync<T>(string assetPath) where T : UnityEngine.Object
         {
             if (!_isInitialized)
             {
@@ -92,7 +91,7 @@ namespace AOT
             return handle.AssetObject as T;
         }
 
-        public void LoadAssetAsync<T>(string assetPath, Action<T> onComplete, Action<string> onFailed = null) where T : Object
+        public void LoadAssetAsync<T>(string assetPath, Action<T> onComplete, Action<string> onFailed = null) where T : UnityEngine.Object
         {
             if (!_isInitialized)
             {
@@ -101,15 +100,15 @@ namespace AOT
             }
 
             var handle = _package.LoadAssetAsync<T>(assetPath);
-            handle.OnComplete += () =>
+            handle.Completed += (h) =>
             {
-                if (handle.Status == EOperationStatus.Succeed)
+                if (h.Status == EOperationStatus.Succeed)
                 {
-                    onComplete?.Invoke(handle.AssetObject as T);
+                    onComplete?.Invoke(h.AssetObject as T);
                 }
                 else
                 {
-                    onFailed?.Invoke(handle.Error);
+                    onFailed?.Invoke(h.LastError);
                 }
             };
         }
@@ -123,7 +122,7 @@ namespace AOT
         {
             if (_package != null)
             {
-                _package.ClearPackageCache();
+                _package.ClearCacheFilesAsync(EFileClearMode.ClearAllBundleFiles);
             }
             _isInitialized = false;
             Debug.Log("[YooAssetManager] Cleanup completed");
