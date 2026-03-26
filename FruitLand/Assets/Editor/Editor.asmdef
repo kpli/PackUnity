@@ -1,7 +1,10 @@
 {
     "name": "Editor",
     "rootNamespace": "Editor",
-    "references": [],
+    "references": [
+        "YooAsset.Editor",
+        "YooAsset"
+    ],
     "includePlatforms": [
         "Editor"
     ],
