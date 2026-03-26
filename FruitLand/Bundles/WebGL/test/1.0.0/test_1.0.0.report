@@ -1,0 +1,76 @@
+{
+    "Summary": {
+        "YooVersion": "2.3.18",
+        "UnityVersion": "2022.3.0f1",
+        "BuildDate": "3/20/2026 1:35:06 AM",
+        "BuildSeconds": 22,
+        "BuildTarget": 20,
+        "BuildPipeline": "BuiltinBuildPipeline",
+        "BuildBundleType": 2,
+        "BuildPackageName": "test",
+        "BuildPackageVersion": "1.0.0",
+        "BuildPackageNote": "3/20/2026 1:34:43 AM",
+        "UniqueBundleName": true,
+        "EnableAddressable": false,
+        "SupportExtensionless": true,
+        "LocationToLower": false,
+        "IncludeAssetGUID": false,
+        "AutoCollectShaders": true,
+        "IgnoreRuleName": "YooAsset.Editor.NormalIgnoreRule",
+        "ClearBuildCacheFiles": true,
+        "UseAssetDependencyDB": true,
+        "EnableSharePackRule": true,
+        "SingleReferencedPackAlone": true,
+        "EncryptionServicesClassName": "null",
+        "ManifestProcessServicesClassName": "null",
+        "ManifestRestoreServicesClassName": "null",
+        "FileNameStyle": 0,
+        "CompressOption": 2,
+        "DisableWriteTypeTree": false,
+        "IgnoreTypeTreeChanges": true,
+        "ReplaceAssetPathWithAddress": false,
+        "WriteLinkXML": true,
+        "CacheServerHost": "",
+        "CacheServerPort": 0,
+        "BuiltinShadersBundleName": "",
+        "MonoScriptsBundleName": "",
+        "AssetFileTotalCount": 1,
+        "MainAssetTotalCount": 1,
+        "AllBundleTotalCount": 1,
+        "AllBundleTotalSize": 1709,
+        "EncryptedBundleTotalCount": 0,
+        "EncryptedBundleTotalSize": 0
+    },
+    "AssetInfos": [
+        {
+            "Address": "",
+            "AssetPath": "Assets/05.Assets/Prefabs/TestPrefab.prefab",
+            "AssetGUID": "8ce0889f794c04ff997f97ab3eb1015d",
+            "AssetTags": [],
+            "MainBundleName": "test_assets_05_assets_prefabs.bundle",
+            "MainBundleSize": 1709,
+            "DependAssets": [],
+            "DependBundles": []
+        }
+    ],
+    "BundleInfos": [
+        {
+            "BundleName": "test_assets_05_assets_prefabs.bundle",
+            "FileName": "a2ba40afed8b8881e7dc4b35deed11a0.bundle",
+            "FileHash": "a2ba40afed8b8881e7dc4b35deed11a0",
+            "FileCRC": 2467973059,
+            "FileSize": 1709,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundles": [],
+            "ReferenceBundles": [],
+            "BundleContents": [
+                {
+                    "AssetPath": "Assets/05.Assets/Prefabs/TestPrefab.prefab",
+                    "AssetGUID": "8ce0889f794c04ff997f97ab3eb1015d"
+                }
+            ]
+        }
+    ],
+    "IndependAssets": []
+}

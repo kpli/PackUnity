@@ -1,0 +1,36 @@
+{
+    "FileVersion": "2025.9.30",
+    "EnableAddressable": false,
+    "SupportExtensionless": true,
+    "LocationToLower": false,
+    "IncludeAssetGUID": false,
+    "ReplaceAssetPathWithAddress": false,
+    "OutputNameStyle": 0,
+    "BuildBundleType": 2,
+    "BuildPipeline": "BuiltinBuildPipeline",
+    "PackageName": "test",
+    "PackageVersion": "1.0.0",
+    "PackageNote": "3/20/2026 1:34:43 AM",
+    "AssetList": [
+        {
+            "Address": "",
+            "AssetPath": "Assets/05.Assets/Prefabs/TestPrefab.prefab",
+            "AssetGUID": "",
+            "AssetTags": [],
+            "BundleID": 0,
+            "DependBundleIDs": []
+        }
+    ],
+    "BundleList": [
+        {
+            "BundleName": "test_assets_05_assets_prefabs.bundle",
+            "UnityCRC": 1529178477,
+            "FileHash": "a2ba40afed8b8881e7dc4b35deed11a0",
+            "FileCRC": 2467973059,
+            "FileSize": 1709,
+            "Encrypted": false,
+            "Tags": [],
+            "DependBundleIDs": []
+        }
+    ]
+}

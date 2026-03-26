@@ -1,0 +1,36 @@
+﻿2026-03-20 01:34:43.069 [INFO] Begin to build package : test by BuiltinBuildPipeline
+2026-03-20 01:34:43.070 [INFO] --------------------------------------------->TaskPrepare<--------------------------------------------
+2026-03-20 01:34:43.071 [INFO] Delete package root directory: /Users/idol/Documents/GitHub/PackUnity/FruitLand/Bundles/WebGL/test
+2026-03-20 01:34:43.072 [INFO] Create pipeline output directory: /Users/idol/Documents/GitHub/PackUnity/FruitLand/Bundles/WebGL/test/OutputCache
+2026-03-20 01:34:43.072 [WARN] [ErrorCode130] Starting with UnityEngine2021, recommend use script build pipeline (SBP) !
+2026-03-20 01:34:43.072 [INFO] TaskPrepare It takes 0 seconds in total
+2026-03-20 01:34:43.073 [INFO] --------------------------------------------->TaskGetBuildMap<--------------------------------------------
+2026-03-20 01:34:47.345 [INFO] TaskGetBuildMap It takes 4 seconds in total
+2026-03-20 01:34:47.346 [INFO] --------------------------------------------->TaskBuilding<--------------------------------------------
+2026-03-20 01:35:06.033 [INFO] UnityEngine build success !
+2026-03-20 01:35:06.034 [INFO] TaskBuilding It takes 18 seconds in total
+2026-03-20 01:35:06.034 [INFO] --------------------------------------------->TaskVerifyBuildResult<--------------------------------------------
+2026-03-20 01:35:06.044 [INFO] Build results verify success!
+2026-03-20 01:35:06.044 [INFO] TaskVerifyBuildResult It takes 0 seconds in total
+2026-03-20 01:35:06.045 [INFO] --------------------------------------------->TaskEncryption<--------------------------------------------
+2026-03-20 01:35:06.046 [INFO] TaskEncryption It takes 0 seconds in total
+2026-03-20 01:35:06.047 [INFO] --------------------------------------------->TaskUpdateBundleInfo<--------------------------------------------
+2026-03-20 01:35:06.058 [INFO] TaskUpdateBundleInfo It takes 0 seconds in total
+2026-03-20 01:35:06.059 [INFO] --------------------------------------------->TaskCreateManifest<--------------------------------------------
+2026-03-20 01:35:06.071 [INFO] Create package manifest file: /Users/idol/Documents/GitHub/PackUnity/FruitLand/Bundles/WebGL/test/1.0.0/test_1.0.0.json
+2026-03-20 01:35:06.151 [INFO] Create package manifest file: /Users/idol/Documents/GitHub/PackUnity/FruitLand/Bundles/WebGL/test/1.0.0/test_1.0.0.bytes
+2026-03-20 01:35:06.153 [INFO] Create package manifest hash file: /Users/idol/Documents/GitHub/PackUnity/FruitLand/Bundles/WebGL/test/1.0.0/test_1.0.0.hash
+2026-03-20 01:35:06.154 [INFO] Create package manifest version file: /Users/idol/Documents/GitHub/PackUnity/FruitLand/Bundles/WebGL/test/1.0.0/test.version
+2026-03-20 01:35:06.162 [INFO] TaskCreateManifest It takes 0 seconds in total
+2026-03-20 01:35:06.162 [INFO] --------------------------------------------->TaskCreateReport<--------------------------------------------
+2026-03-20 01:35:06.170 [INFO] Create build report file: /Users/idol/Documents/GitHub/PackUnity/FruitLand/Bundles/WebGL/test/1.0.0/test_1.0.0.report
+2026-03-20 01:35:06.171 [INFO] TaskCreateReport It takes 0 seconds in total
+2026-03-20 01:35:06.172 [INFO] --------------------------------------------->TaskCreatePackage<--------------------------------------------
+2026-03-20 01:35:06.173 [INFO] Start making patch package: /Users/idol/Documents/GitHub/PackUnity/FruitLand/Bundles/WebGL/test/1.0.0
+2026-03-20 01:35:06.265 [INFO] TaskCreatePackage It takes 0 seconds in total
+2026-03-20 01:35:06.266 [INFO] --------------------------------------------->TaskCopyBuildinFiles<--------------------------------------------
+2026-03-20 01:35:06.266 [INFO] TaskCopyBuildinFiles It takes 0 seconds in total
+2026-03-20 01:35:06.267 [INFO] --------------------------------------------->TaskCreateCatalog<--------------------------------------------
+2026-03-20 01:35:06.267 [INFO] TaskCreateCatalog It takes 0 seconds in total
+2026-03-20 01:35:06.268 [INFO] Total build process time: 22 seconds
+2026-03-20 01:35:06.268 [INFO] Resource pipeline build success
